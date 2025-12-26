@@ -1,9 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
+  const contactEmail = process.env.CONTACT_EMAIL;
+  const resend = new Resend(process.env.RESEND_API_KEY); 
+
+  // 1. Environment validation (EARLY RETURN)
+  if (!contactEmail || !resend) {
+    return NextResponse.json(
+      { error: "Server email configuration is missing." },
+      { status: 500 }
+    );
+  }
+
   try {
     const { name, email, message } = await req.json();
 
@@ -15,7 +25,7 @@ export async function POST(req: NextRequest) {
     // 3. Send the email
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: process.env.CONTACT_EMAIL,
+      to: contactEmail,
       subject: `New message from ${name} on your portfolio`,
       html: `
         <div>

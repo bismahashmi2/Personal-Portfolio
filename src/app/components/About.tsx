@@ -5,6 +5,8 @@ import * as FaIcons from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInDown, fadeIn, staggerContainer, cardHoverSmall, cardHover } from "@/utils/animations";
 
+type IconName = keyof typeof FaIcons;
+
 const About = () => {
   return (
     <section id="about" className="container max-w-7xl mx-auto py-20">
@@ -39,7 +41,7 @@ const About = () => {
         variants={staggerContainer}
         >
           {skills.map((skill) => {
-            const IconComponent = (FaIcons as any)[skill.icon]; // Dynamically get icon component
+            const IconComponent = FaIcons[skill.icon as IconName]; // Dynamically get icon component
             return (
               <motion.div
                 key={skill.name}
