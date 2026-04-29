@@ -120,8 +120,7 @@ const Contact = () => {
           >
             <h2 className="text-2xl font-semibold">Get In Touch</h2>
             <p className="text-slate-300 md:w-2/3">
-              I&apos;m always open to discussing new projects, creative ideas or
-              opportunities to be part of your visions.
+            I&apos;m open to internship opportunities, collaborations, and projects related to frontend development and AI-assisted systems. Feel free to reach out if you&apos;d like to discuss ideas or work together.
             </p>
           </motion.div>
 

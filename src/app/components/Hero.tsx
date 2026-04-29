@@ -34,7 +34,7 @@ const Hero = () => {
             <motion.p
             variants={fadeInUp}
             transition={{delay: 0.4}}
-            className='text-xl md:text-2xl mb-8 text-slate-300'>Front-End Developer | Agentic AI Enthusiast</motion.p>
+            className='text-xl md:text-2xl mb-8 text-slate-300'>Front-End Developer | Building with Agentic AI & LLMs</motion.p>
 
             <motion.div
             variants={fadeInUp}

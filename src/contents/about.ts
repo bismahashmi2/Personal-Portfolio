@@ -4,17 +4,17 @@ export const skills: Skill[] = [
   {
     name: "Frontend",
     icon: "FaCode",
-    items: ["Next.js", "Typescript", "Tailwind CSS", "HTML5 / CSS3", "Node.js"],
+    items: ["Next.js", "Typescript", "Tailwind CSS", "HTML5 / CSS3"],
   },
   {
-    name: "Machine Learning",
+    name: "AI & Development Workflows",
     icon: "FaLaptopCode",
-    items: ["Python", "OpenAI Agents-SDK", "Prompt Engineering"],
+    items: ["Generative AI", "Prompt Engineering", "AI-Powered Development", "Specification-Driven Development", "OpenAI Agents-SDK"],
   },
   {
     name: "Tools & Others",
     icon: "FaGraduationCap",
-    items: ["Git / Github", "Streamlit", "Chainlit"],
+    items: ["Claude Code", "Gemini CLI", "Docusaurus", "Git / Github", "Streamlit"],
   },
 ];
 
@@ -23,6 +23,6 @@ export const education: Education[] = [
     degree: "Certified Agentic & Robotics AI Engineering",
     institution: "Governor's Initiative for AI",
     duration: "2024 - Present",
-    description: "Currently pursuing. Focusing Prompt & Context Engineering along with latest AI trends.",
+    description: "Focused on Agentic AI systems, prompt engineering and AI-assisted software development workflows with hands-on project experience in building structured AI-driven applications.",
   },
 ];

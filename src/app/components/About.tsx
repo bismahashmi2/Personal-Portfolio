@@ -23,7 +23,7 @@ const About = () => {
       <motion.section 
       variants={fadeInUp}
       className="mb-16">
-        <p className="text-lg max-w-3xl mx-auto text-center text-slate-300">I&apos;m a passionate Frontend Developer and Agentic AI Engineer with expertise in modern programming languages. With a strong foundation in front-end technologies and Python, I create stunning websites and powerful chatbots in a short time.</p>
+        <p className="text-lg max-w-3xl mx-auto text-center text-slate-300">I&apos;m a Frontend Developer and Agentic AI Enthusiast focused on building structured, user-friendly web applications and exploring AI-assisted development workflows.With a strong foundation in front-end technologies and Python, I enjoy combining modern frontend technologies with AI tools to create meaningful and scalable digital experiences.</p>
       </motion.section>
 
       {/* skills section */}
